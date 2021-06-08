@@ -1,2 +1,1 @@
-#Grit.# grit-server
-# grit-server
+# Grit-Server
