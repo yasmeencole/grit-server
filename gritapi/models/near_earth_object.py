@@ -1,8 +1,8 @@
 from django.db import models
-
+from django.contrib.auth.models import User
 
 class NearEathObject(models.Model):
-    user = models.ForeignKey("User", on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     neo_reference = models.IntegerField()
     name = models.CharField(max_length=50)
     image = models.ImageField()
