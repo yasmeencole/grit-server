@@ -1,0 +1,18 @@
+[
+    {
+        "model": "gritapi.favorite",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "neo": 1
+        }
+    },
+    {
+        "model": "gritapi.favorite",
+        "pk": 2,
+        "fields": {
+            "user": 1,
+            "neo": 2
+        }
+    }
+]

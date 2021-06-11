@@ -1,0 +1,47 @@
+[
+    {
+        "model": "gritapi.NearEathObject",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "neo_reference": 3426410,
+            "name": "(2008 QV11)",
+            "image": "https://thumbs-prod.si-cdn.com/QpsXsYZHyYWs6W3lIr-hntRwu0I=/fit-in/1072x0/https://public-media.si-cdn.com/filer/e2/05/e205fe60-822b-4713-875d-14a5782bb4db/asteroid.jpg",
+            "estimated_diameter": 550.2246310023,
+            "is_potentially_hazardous": false,
+            "close_approach_date": "2021-04-06",
+            "miles_per_hour": "44178.3459685959",
+            "orbiting_body": "Earth"
+        }
+    },
+    {
+        "model": "gritapi.NearEathObject",
+        "pk": 2,
+        "fields": {
+            "user": 1,
+            "neo_reference": 3752035,
+            "name": "(2016 GL222)",
+            "image": "https://skyandtelescope.org/wp-content/uploads/Asteroid_16_Psyche_-47191.jpeg",
+            "estimated_diameter": 60.3309310875,
+            "is_potentially_hazardous": false,
+            "close_approach_date": "2021-06-12",
+            "miles_per_hour": "8108.4002165851",
+            "orbiting_body": "Earth"
+        }
+    },
+    {
+        "model": "gritapi.NearEathObject",
+        "pk": 3,
+        "fields": {
+            "user": 1,
+            "neo_reference": 54130042,
+            "name": "(2021 EV)",
+            "image": "http://www.nasa.gov/sites/default/files/thumbnails/image/pia24472-psyche-asteroid-illustration-16_0.jpg",
+            "estimated_diameter": 664.5689217411,
+            "is_potentially_hazardous": true,
+            "close_approach_date": "2021-06-11",
+            "miles_per_hour": "34603.4927087677",
+            "orbiting_body": "Earth"
+        }
+    }
+]
