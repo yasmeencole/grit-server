@@ -22,12 +22,12 @@ class NearEarthObjectView(ViewSet):
         """
 
         # Uses the token passed in the `Authorization` header
-        user = request.auth.user
 
         # Create a new Python instance of the Game class
         # and set its properties from what was sent in the
         # body of the request from the client.
         near_earth_object = NearEathObject()
+        near_earth_object.user = request.auth.user
         near_earth_object.neo_reference = request.data["neo_reference"]
         near_earth_object.name = request.data["name"]
         near_earth_object.image = request.data["image"]
@@ -132,9 +132,16 @@ class NearEarthObjectView(ViewSet):
         Returns:
             Response -- JSON serialized list of NEO's
         """
-        user = request.auth.user
         # Get all NEO records from the database
         near_earth_object = NearEathObject.objects.all()
+        
+        user = request.auth.user
+        # looking for anything after ? user=me
+        list_params = self.request.query_params.get("user", None)
+        
+        if list_params is not None:
+            near_earth_object = near_earth_object.filter(user=user)
+        
 
         serializer = NearEarthObjectSerializer(near_earth_object, many=True, context={'request': request})
         return Response(serializer.data)
