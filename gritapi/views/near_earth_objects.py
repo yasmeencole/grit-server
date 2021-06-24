@@ -150,5 +150,5 @@ class NearEarthObjectView(ViewSet):
 class NearEarthObjectSerializer(serializers.ModelSerializer):
     class Meta:
         model = NearEathObject
-        fields = ('id', 'neo_reference', 'name', 'image', 'estimated_diameter', 'is_potentially_hazardous', 'close_approach_date', 'miles_per_hour', 'orbiting_body')
+        fields = ('id', "user_id", 'neo_reference', 'name', 'image', 'estimated_diameter', 'is_potentially_hazardous', 'close_approach_date', 'miles_per_hour', 'orbiting_body')
         depth = 1
